@@ -1,0 +1,3 @@
+import type {Metadata} from 'next';import './globals.css';import './platform.css';import PlatformShell from '@/components/PlatformShell';
+export const metadata:Metadata={metadataBase:new URL(process.env.NEXT_PUBLIC_SITE_URL||'http://localhost:3000'),title:{default:'PICPRO VIDEOGRAPHY | Find Every Memory',template:'%s | PICPRO VIDEOGRAPHY'},description:'Capture Every Moment. Find Every Memory. Private event galleries and AI-powered photo discovery.',icons:{icon:'/images/pic-pro-logo.png'},referrer:'no-referrer'};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><PlatformShell>{children}</PlatformShell></body></html>}
